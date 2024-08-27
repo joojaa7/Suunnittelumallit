@@ -6,10 +6,10 @@ public abstract class Map {
 
     public abstract char createTile();
 
-    public void display(Map map, int size) {
+    public void display(int size) {
         ArrayList<Character> tiles = new ArrayList<>();
         for (int i = 0; i < size * size; i++) {
-            tiles.add(map.createTile());
+            tiles.add(createTile());
         }
         for (int j = 0; j < size; j++) {
             for (int k = 0; k < size; k++) {

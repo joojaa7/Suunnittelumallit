@@ -10,7 +10,7 @@ public class Game {
         Map map = createMap();
         System.out.println("Enter the size of the map: ");
         int size = sc.nextInt();
-        map.display(map, size);
+        map.display(size);
     }
 
     public static Map createMap() {
