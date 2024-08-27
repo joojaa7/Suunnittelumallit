@@ -14,7 +14,7 @@ public abstract class Map {
         }
         for (int j = 0; j < size; j++) {
             for (int k = 0; k < size; k++) {
-                System.out.print(tiles.get(j * size + k));
+                System.out.print(tiles.get(j * size + k) + " ");
             }
             System.out.println();
         }
