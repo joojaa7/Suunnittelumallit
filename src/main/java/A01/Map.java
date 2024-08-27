@@ -6,7 +6,8 @@ public abstract class Map {
 
     public abstract char createTile();
 
-    public void display(int size) {
+    public void display() {
+        int size = 9;
         ArrayList<Character> tiles = new ArrayList<>();
         for (int i = 0; i < size * size; i++) {
             tiles.add(createTile());
