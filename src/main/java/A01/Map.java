@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public abstract class Map {
 
-    public abstract char createTile();
+    public abstract Tile createTile();
 
     public void display() {
         int size = 9;
         ArrayList<Character> tiles = new ArrayList<>();
         for (int i = 0; i < size * size; i++) {
-            tiles.add(createTile());
+            tiles.add(createTile().getCharacter());
         }
         for (int j = 0; j < size; j++) {
             for (int k = 0; k < size; k++) {

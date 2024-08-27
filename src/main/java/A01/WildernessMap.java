@@ -1,15 +1,21 @@
 package A01;
 
+import A01.Tiles.*;
+
 import java.util.Random;
 
 public class WildernessMap extends Map{
 
-    char[] tiles = {'S', 'W', 'F'};
     Random random = new Random();
 
     @Override
-    public char createTile() {
+    public Tile createTile() {
         int index = random.nextInt(3);
-        return tiles[index];
+        return switch (index) {
+            case 0 -> new SwampTile();
+            case 1 -> new ForestTile();
+            case 2 -> new WaterTile();
+            default -> null;
+        };
     }
 }
