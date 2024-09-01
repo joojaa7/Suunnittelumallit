@@ -7,9 +7,9 @@ public class RunApp {
 
     public static void main (String[] args) {
 
-        UIFactory uiFactory = new FactoryA();
+        UIFactory uiFactory = new FactoryB();
         Button button = uiFactory.createButton("Click here");
-        TextField textField = uiFactory.createTextField("tests.");
+        TextField textField = uiFactory.createTextField("tests");
         Checkbox checkbox = uiFactory.createCheckbox("Confirm by clicking.");
         button.display();
         textField.display();

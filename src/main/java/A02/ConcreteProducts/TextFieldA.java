@@ -7,12 +7,12 @@ public class TextFieldA extends TextField {
     private String textfieldElement;
 
     public TextFieldA(String text) {
-        textfieldElement = "Text for " + text + " :";
+        textfieldElement = "Text for " + text + ":";
     }
 
     @Override
     public void setText(String text) {
-        textfieldElement = "Text for " + text + " :";
+        textfieldElement = "Text for " + text + ":";
     }
 
     @Override
