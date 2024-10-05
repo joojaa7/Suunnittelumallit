@@ -1,4 +1,4 @@
-package A10.Handlers;
+package A10;
 
 public enum Message {
     COMPENSATION,
