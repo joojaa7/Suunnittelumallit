@@ -1,7 +1,5 @@
 package A10;
 
-import A10.Handlers.Message;
-
 public class CustomerMessage {
 
     private final Message messageType;
