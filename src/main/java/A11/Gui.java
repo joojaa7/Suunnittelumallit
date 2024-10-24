@@ -105,9 +105,7 @@ public class Gui extends Application {
             Text dateText = new Text(String.valueOf(date));
             Text optionsText = new Text(options);
             historyHBox.getChildren().addAll(dateText, optionsText);
-            historyHBox.setOnMouseClicked(e -> {
-                setColoursFromHistory(options);
-            });
+            historyHBox.setOnMouseClicked(e -> setColoursFromHistory(options));
             history.getItems().addAll(historyHBox);
             double rowWidth = dateText.getLayoutBounds().getWidth() + optionsText.getLayoutBounds().getWidth() + 24;
             history.setPrefWidth(rowWidth);
