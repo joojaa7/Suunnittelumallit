@@ -22,9 +22,9 @@ public class Gui extends Application {
     private ColorBox colorBox2;
     private ColorBox colorBox3;
     private CheckBox checkBox;
-    private Button historyButton;
+    private  Button historyButton;
     private HBox historyBox;
-    private ListView history;
+    private ListView<HBox> history;
     private ColorBox[] colorBoxes;
 
     public void start(Stage stage) {
