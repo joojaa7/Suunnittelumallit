@@ -14,7 +14,7 @@ public class File implements FileSystemElement{
 
     @Override
     public void accept(FileSystemVisitor visitor){
-        visitor.visitFile(this);
+        visitor.visit(this);
     }
 
     public int getSize() {

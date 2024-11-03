@@ -21,7 +21,7 @@ public class Directory implements FileSystemElement {
 
     @Override
     public void accept(FileSystemVisitor visitor) {
-        visitor.visitDirectory(this);
+        visitor.visit(this);
     }
 
     public List<FileSystemElement> getSubElements() {

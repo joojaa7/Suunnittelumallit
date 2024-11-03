@@ -9,16 +9,16 @@ public class SizeCalculatorVisitor implements FileSystemVisitor{
     private int totalSize = 0;
 
     @Override
-    public void visitFile(File file){
+    public void visit(File file){
         System.out.println("Size of file " + file.getName() + ": " + file.getSize() + " megabytes.");
     }
 
     @Override
-    public void visitDirectory(Directory directory){
+    public void visit(Directory directory){
         if (!directory.getSubElements().isEmpty()) {
             for (FileSystemElement f : directory.getSubElements()) {
                 if (f instanceof Directory){
-                    visitDirectory((Directory) f);
+                    visit((Directory) f);
                 }
                 else {
                     assert f instanceof File : "Something went wrong";

@@ -13,7 +13,7 @@ public class Main {
 
         SizeCalculatorVisitor sizeCalculatorVisitor = new SizeCalculatorVisitor();
         SearchVisitor searchVisitor = new SearchVisitor("txt");
-        FileSystemElement file = new File("Testi.txt", 10);
+        File file = new File("Testi.txt", 10);
         Directory directory = new Directory("Files");
         Directory subdirectory = new Directory("Subdirectory");
         directory.add(subdirectory);

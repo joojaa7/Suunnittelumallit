@@ -5,8 +5,8 @@ import A13.Elements.File;
 
 public interface FileSystemVisitor {
 
-    void visitFile(File file);
+    void visit(File file);
 
-    void visitDirectory(Directory directory);
+    void visit(Directory directory);
 
 }

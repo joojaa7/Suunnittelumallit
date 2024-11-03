@@ -17,16 +17,16 @@ public class SearchVisitor implements FileSystemVisitor{
     }
 
     @Override
-    public void visitFile(File file){
+    public void visit(File file){
         System.out.println(file.getName() + " is not a directory.");
     }
 
     @Override
-    public void visitDirectory(Directory directory){
+    public void visit(Directory directory){
         if (!directory.getSubElements().isEmpty()) {
             for (FileSystemElement f : directory.getSubElements()) {
                 if (f instanceof Directory){
-                    visitDirectory((Directory) f);
+                    visit((Directory) f);
                 }
                 else {
                     assert f instanceof File : "Something went wrong";
