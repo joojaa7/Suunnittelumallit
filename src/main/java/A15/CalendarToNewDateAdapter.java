@@ -2,7 +2,7 @@ package A15;
 
 import java.util.Calendar;
 
-public class CalendarToNewDateAdapter implements  NewDateInterface{
+public class CalendarToNewDateAdapter implements NewDateInterface{
 
     private final Calendar calendar;
 

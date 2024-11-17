@@ -7,12 +7,12 @@ import java.util.List;
 
 public class Controller{
     private final Model model;
-    private final Gui gui;
+    private final A11.Gui gui;
     private final List<IMemento> history;
     private final List<IMemento> future;
     private final LinkedHashMap<Date, String> savedHistory;
 
-    public Controller(Gui gui) {
+    public Controller(A11.Gui gui) {
         this.model = new Model();
         this.gui = gui;
         this.history = new ArrayList<>();
