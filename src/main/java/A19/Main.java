@@ -1,9 +1,9 @@
-package A17;
+package A19;
 
 public class Main {
 
     public static void main(String[] args) {
-        TileGui.launch(TileGui.class, args);
+        MediatorGui.launch(MediatorGui.class, args);
     }
 
 }
