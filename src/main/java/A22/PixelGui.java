@@ -15,8 +15,8 @@ public class PixelGui extends Application {
 
     private final int PIXEL_SCALE = 100;
     private final int PIXEL_AMOUNT = 8;
-    private int CURSOR_X = 0;
-    private int CURSOR_Y = 0;
+    private int CURSOR_X = 1;
+    private int CURSOR_Y = 1;
     private VBox vBox;
 
 

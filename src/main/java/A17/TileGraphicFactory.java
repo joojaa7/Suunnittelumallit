@@ -11,7 +11,7 @@ import java.util.Random;
 public class TileGraphicFactory {
 
     private static final HashMap<String, Tile> tileWarehouse = new HashMap<>();
-    private static final Map map = new WildernessMap();
+    private static final Map map = new CityMap();
     private static final Random random = new Random();
 
 
